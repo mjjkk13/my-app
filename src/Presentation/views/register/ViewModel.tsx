@@ -33,7 +33,6 @@ const RegisterViewModel = () => {
     try {
       const response = await RegisterAuthUseCase({ name, email, password, confirmPassword });
       if (response.success) {
-        // Limpiar todos los campos después de registro exitoso
         setName('');
         setEmail('');
         setPassword('');

@@ -13,21 +13,21 @@ const RegisterScreen = () => {
     register 
   } = useRegisterViewModel();
 
-  const handleRegister = async () => {
+    const handleRegister = async () => {
     if (password !== confirmPassword) {
       Alert.alert('Error', 'Las contraseñas no coinciden');
       return;
     }
-
+  
     if (!name || !email || !password) {
       Alert.alert('Error', 'Todos los campos son obligatorios');
       return;
     }
-
+  
     try {
       const success = await register();
       if (success) {
-        Alert.alert('Éxito', 'Registro completado correctamente');
+        Alert.alert('Éxito', `Registro completado correctamente. Bienvenido, ${name}!`);
       } else {
         Alert.alert('Error', 'No se pudo completar el registro');
       }

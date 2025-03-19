@@ -15,7 +15,7 @@ app.use('/api/users', userRoutes);
 app.set('port', port);
 
 // Dirección IP V4 de la máquina, consultar con ipconfig
-server.listen(port, '192.168.227.109' || 'localhost', function() {
+server.listen(port, '192.168.66.109' || 'localhost', function() {
   console.log('Aplicación de NodeJS ' + process.pid + ' inició en el puerto ' + port);
 });
 
