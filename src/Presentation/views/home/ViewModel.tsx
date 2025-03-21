@@ -7,7 +7,11 @@ const useHomeViewModel = () => {
     setValues({ ...values, [property]: value });
   };
 
-  return { ...values, onChange };
+  const resetValues = () => {
+    setValues({ email: '', password: '' });
+  };
+
+  return { ...values, onChange, resetValues };
 };
 
 export default useHomeViewModel;

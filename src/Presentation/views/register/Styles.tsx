@@ -34,16 +34,24 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF', 
     },
     button: {
-        width: '80%', 
-        backgroundColor: '#F4991A',
+        width: '80%',
+        backgroundColor: '#6A5ACD',
         padding: 15,
-        borderRadius: 5,
+        borderRadius: 25,
         alignItems: 'center',
         marginTop: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        elevation: 5,
     },
     buttonText: {
-        color: 'white',
+        color: '#FFFFFF',
         fontWeight: 'bold',
+        fontSize: 16,
+        textTransform: 'uppercase',
+        letterSpacing: 1.5,
     },
 });
 
